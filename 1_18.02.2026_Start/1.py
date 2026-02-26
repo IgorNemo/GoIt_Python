@@ -802,7 +802,6 @@
 # is_active = input("Do You wish to receive news from the site? (yes/no): ") != ""
 # print(name, email, age, height, is_active)
 
-print("Hi ", end="")
-print("there!")
-
+# print("Hi ", end="")
+# print("there!")
 
