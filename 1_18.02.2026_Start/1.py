@@ -918,5 +918,3 @@
 #     if char == search:
 #         result += 1
 # print(result)
-
-
