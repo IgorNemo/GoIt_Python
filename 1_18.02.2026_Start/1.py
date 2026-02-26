@@ -805,6 +805,118 @@
 # print("Hi ", end="")
 # print("there!")
 
+# def greet(name, message="Привіт"):
+#     print(f"{message}, {name}!")
+# name1 = input("Input Your name? please: ")
+# greet(name1)
 
-print("there!")
+# def greet(name, age, message="Привіт"):
+#     print(f"{message}, {name}! You are {age} years old.")
+
+# name1 = input("Input your name: ")
+# age1 = int(input("Input your age: "))
+
+# greet(name1, age1)
+
+# def func(a, b=5, c=10):
+#     print('a дорівнює', a,', b дорівнює', b,', а c дорівнює', c)
+
+# # a дорівнює 3, b дорівнює 7, а c дорівнює 10
+# func(3, 7)
+
+# # a дорівнює 25, b дорівнює 5, а c дорівнює 24
+# func(25, c=24)
+
+# # a дорівнює 100, b дорівнює 5, а c дорівнює 50
+# func(c=50, a=100)
+
+# def real_cost(base: int, discount: float = 0) -> float:
+#     return base * (1 - discount)
+
+# def greet(name: str) -> float:
+#     print(f"Hello, {name}")
+# greet("RRR")
+
+# def print_all_args(*args):
+#     for arg in args:
+#         print(arg)
+
+# print_all_args(1, 'hello', True)
+
+# def concatenate(*args) -> str:
+#     result = ""
+#     for arg in args:
+#         result += arg
+#     return result
+
+# print(concatenate("Hello", " ", "world", "!"))
+
+# def concatenate(*strings) -> str:
+#     result = ""
+#     for arg in strings:
+#         result += arg
+#     return result
+
+# print(concatenate("Hello", " ", "world", "!"))
+
+# def greet(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+
+# greet(name="Alice", age=25)
+
+# def factorial(n):
+#     if n == 0: # базовий випадок
+#         return 1
+#     else:
+#         return n * factorial(n-1) # рекурсивний випадок
+
+# print(factorial(7)) # виведе 120
+
+# def fibonacci(n):
+#     if n <= 1: # базовий випадок
+#         return n
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2) # рекурсивний випадок
+
+# print(fibonacci(10)) # виведе 55
+
+# work_experience = int(input("Enter your full work experience in years: "))
+
+# if work_experience > 1 and work_experience <= 5:
+#     developer_type = "Middle"
+# elif work_experience <= 1:
+#     developer_type = "Junior"
+# else:
+#     developer_type = "Senior"
+
+# num = int(input("Enter integer number: "))
+
+# if num > 0:
+#     if num % 2 != 0:
+#         result = "Positive odd number"
+#     else:
+#         result = "Positive even number"
+# elif num < 0:
+#     result = "Negative number"
+# else:
+#     result = "It is zero"
+# print(result)
+
+# num = int(input("Enter the integer (0 to 100): "))
+# sum = 0
+
+# while num > 0:
+#     sum = sum + num
+#     num = num - 1
+# print(sum)
+
+# message = "Never argue with stupid people, they will drag you down to their level and then beat you with experience."
+# search = "r"
+# result = 0
+# for char in message:
+#     if char == search:
+#         result += 1
+# print(result)
+
 
