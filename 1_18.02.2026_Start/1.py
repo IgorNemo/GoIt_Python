@@ -918,3 +918,123 @@
 #     if char == search:
 #         result += 1
 # print(result)
+
+# my_list = []
+# my_list.insert(0, 2024)
+# my_list.append("Python")
+# my_list.insert(2, 3.12)
+# print(f"{my_list[0]}, {my_list[1]}, {my_list[2]}")
+
+# my_list.extend(some_data)
+# my_list.insert(1, "Python")
+# my_list.reverse()
+# print(my_list)
+
+# data = {}
+# data["year"] = 2024
+# data["lang"] = "Python"
+# data["version"] = 3.12
+# print(data)
+
+# cat = {}
+# info = {"status": "vaccinated", "breed": True}
+# cat["nick"] = "Simon"
+# cat["age"] = 7
+# cat["characteristics"] = ["лагідний","кусається"]
+# age: int
+# age = cat["age"]
+# print(age) 
+# cat.update(info)
+# print(cat)
+
+# age = input("How old are you? ")
+# try:
+#     age = int(age)
+#     if age >= 18:
+#         print("You are adult.")
+#     else:
+#         print("You are infant")
+# except ValueError:
+#     print(f"{age} is not a number")
+
+# pool = 1000
+# quantity = int(input("Enter the number of mailings: "))
+# try:
+#     chunk = pool // quantity
+# except ZeroDivisionError:
+#     print('Divide by zero completed!')
+# print(f"Size of SMS pack is {chunk}")
+
+# def greeting():
+#     print("Hello world!")
+# print(greeting())
+
+# def invite_to_event():
+#     username = input("Please? input Your USERNAME: ")
+#     print(f"Dear {username}, we have the honour to invite you to our event")
+# invite_to_event()
+
+# username = input("Please input Your USERNAME: ")
+# def invite_to_event(username):
+#     return f"Dear {username}, we have the honour to invite you to our event"
+# invite_to_event(username)
+
+# def invite_to_event(username):
+#     return f"Dear {username}, we have the honour to invite you to our event"
+
+# def discount_price(price, discount: float):
+#     def apply_discount():
+#         return price * (1 - discount)
+
+#     return apply_discount()
+
+# print(discount_price(10, 0.2))
+
+# def get_fullname(first_name, last_name, middle_name = ""):
+#     if middle_name == "":
+#         print(f"{first_name} {last_name}")
+#     else:
+#         print(f"{first_name} {middle_name} {last_name}")
+# get_fullname("Igor", "Danylyuk", "Andriyovych")
+
+# def get_fullname(first_name, last_name, middle_name = ""):
+#     if middle_name == "":
+#         print(f"{first_name} {last_name}")
+#     else:
+#         print(f"{first_name} {middle_name} {last_name}")
+# first = input("Please input Your First Name: ")
+# last = input("Please input Your Last Name: ")
+# middle = input("Please input Your Middle Name: ")
+# get_fullname(first, last, middle)
+
+# def get_fullname(first_name, last_name, middle_name=""):
+#     if middle_name == "":
+#         return f"{first_name} {last_name}"
+#     return f"{first_name} {middle_name} {last_name}"
+
+# def format_string(string:str,length:int):
+#     if len(string) < length:
+#         indent = (length - len(string)) // 2
+#         string = " " * indent + string + " " * indent
+#     print(string)
+#     return string
+# # s = input("Input word: ")
+# format_string("abba", 15)
+
+# def format_string(string:str,length:int):
+#     if len(string) < length:
+#         indent = (length - len(string)) // 2
+#         string = " " * indent + string
+#     return string
+
+# def first(size, *args):
+#     return size + len(args)
+
+
+# def second(size, **kwargs):
+#     return size + len(kwargs)
+
+# print(first(5, "first", "second", "third"))  
+# print(first(1, "Alex", "Boris"))             
+# print(second(3, comment_one="first", comment_two="second", comment_third="third"))
+# print(second(10, comment_one="Alex", comment_two="Boris"))
