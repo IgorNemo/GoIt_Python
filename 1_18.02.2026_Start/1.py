@@ -1354,3 +1354,86 @@ from datetime import timedelta
 # iso_calendar = now.isocalendar()
 
 # print(f"ISO рік: {iso_calendar[0]}, ISO тиждень: {iso_calendar[1]}, ISO день тижня: {iso_calendar[2]}")
+
+# import time
+
+# current_time = time.time()
+# print(f"Поточний час: {current_time}")
+
+# import time
+# current_time = time.ctime()
+# print(current_time)
+# print("Початок паузи")
+
+# time.sleep(5)
+# current_time = time.ctime()
+# print(current_time)
+# print("Кінець паузи")
+
+# import time
+
+# current_time = time.time()
+# print(f"Поточний час: {current_time}")
+
+# readable_time = time.ctime(current_time)
+# print(f"Читабельний час: {readable_time}")
+
+# import time
+
+# current_time = time.time()
+# print(f"Поточний час: {current_time}")
+
+# local_time = time.localtime(current_time)
+# print(f"Місцевий час: {local_time}")
+
+# import time
+
+# # Записуємо час на початку виконання
+# start_time = time.perf_counter()
+
+# # Виконуємо якусь операцію
+# for _ in range(1_000_000):
+#     pass  # Просто проходить цикл мільйон разів
+
+# # Записуємо час після виконання операції
+# end_time = time.perf_counter()
+
+# # Розраховуємо та виводимо час виконання
+# execution_time = end_time - start_time
+# print(f"Час виконання: {execution_time} секунд")
+
+# import random
+
+# dice_roll = random.randint(1, 6)
+# print(f"Ви кинули {dice_roll}")
+
+# import random
+
+# num = random.random()
+# print(num)
+
+# import random
+
+# fill_percentage = random.random() * 100
+# print(f"Заповнення: {fill_percentage:.2f}%")
+
+# import random
+# print(random.randrange(10))  # Верхня межа є 10, але не включається
+
+# import random
+
+# target = random.randrange(1, 11, 2)
+# print(f"Ціль: {target}")
+
+# import random
+
+# cards = ["Туз", "Король", "Дама", "Валет", "10", "9", "8", "7", "6"]
+
+# random.shuffle(cards)
+
+# print(f"Перемішана колода: {cards}")
+
+# import random
+
+# fruits = ['apple', 'banana', 'orange']
+# print(random.choice(fruits))
