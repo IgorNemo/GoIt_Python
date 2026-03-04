@@ -1437,3 +1437,225 @@ from datetime import timedelta
 
 # fruits = ['apple', 'banana', 'orange']
 # print(random.choice(fruits))
+
+# import math
+
+# # Вихідне число
+# x = 3.7
+
+# # Використання різних методів округлення
+# ceil_result = math.ceil(x)  # Округлення вгору
+# floor_result = math.floor(x)  # Округлення вниз
+# trunc_result = math.trunc(x)  # Відсікання дробової частини
+
+# print(ceil_result, floor_result, trunc_result)
+
+# import math
+
+# # Використання констант
+# print(math.pi)  # Виведе приблизне значення π
+
+# # Тригонометрія
+# angle = math.radians(60)  # Конвертація з градусів у радіани
+# print(math.sin(angle))  # Синус кута
+
+# # Корінь числа
+# print(math.sqrt(9))  # Квадратний корінь з 9
+
+# # Логарифми
+# print(math.log(10, 2))  # Логарифм 10 за основою 2
+
+# print(0.1 + 0.2 == 0.3)  # Це повертає False
+# print(0.1 + 0.2)
+
+# import math
+
+# r = math.isclose(0.1 + 0.2, 0.3)
+# print(r)  # Це поверне True
+
+# import math
+
+# r = math.isclose(0.1, 0.10000000009)
+# print(r)  # Це поверне True
+
+# this_is_string = "Hi there!"
+
+# the_same_string = 'Hi there!'
+
+# this_is_string == the_same_string# True
+# print(this_is_string == the_same_string)
+
+# text = """This is first line
+# And second line
+# Last third line"""
+
+# song = '''Jingle bells, jingle bells
+# Jingle all the way
+# Oh, what fun it is to ride
+# In a one horse open sleigh'''
+
+# print(text)
+# print(song)
+
+# ("spam " "eggs") == "spam eggs"
+# print(("spam " "eggs") == "spam eggs")
+
+# one_line_text = ("Textual data in Python is handled with str objects,"
+#                 " or strings. Strings are immutable sequences of Unicode"
+#                 " code points. String literals are written in a variety "
+#                 " of ways: single quotes, double quotes, triple quoted.")
+# print(one_line_text)
+
+# query = ("SELECT * "
+#          "FROM some_table "
+#          "WHERE condition1 = True "
+#          "AND condition2 = False")
+# print(query)
+
+# query = ("SELECT * "
+#          "FROM some_table "
+#          "WHERE condition1 = True "
+#          "AND condition2 = False")
+
+# Спеціальні символи Python
+# https://uk.wikipedia.org/wiki/%D0%9A%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BE%D1%81%D0%BB%D1%96%D0%B4%D0%BE%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C
+
+# print("Hello\nWorld")
+
+# print("Hello\tWorld")
+
+# print("Hello my little\rsister")
+
+# print("Hello\bWorld")
+
+# print("Hello\\World")
+
+# print('It\'s a beautiful day')
+# print("He said, \"Hello\"")
+
+# s = "Hi there!"
+
+# start = 0
+# end = 7
+
+# print(s.find("er", start, end)) # 5
+# print(s.find("q")) # -1
+
+# s = 'Some words'
+
+# print(s.find("o"))
+# print(s.rfind('o'))
+
+s = 'Some words'
+
+# print(s.find("q"))
+# print(s.rindex('o'))
+
+# text = 'hello world'
+# result = text.split()
+# print(result)  # Виведе: ['hello', 'world']
+
+# text = "apple,banana,cherry"
+# result = text.split(',')
+# print(result)  # Виведе: ['apple', 'banana', 'cherry']
+
+# list_of_strings = ['Hello', 'world']
+# result = ' '.join(list_of_strings)
+# print(result)  # Виведе: 'Hello world'
+
+# elements = ['earth', 'air', 'fire', 'water']
+# result = ', '.join(elements)
+# print(result)  # Виведе: 'earth, air, fire, water'
+
+# print('   spacious   ')
+# clean = '   spacious   '.strip()
+# print(clean) # spacious
+
+# text = "Hello world"
+# print(text)
+# new_text = text.replace("world", "Python")
+# print(new_text) 
+
+# text = "one fish, two fish, red fish, blue fish"
+# new_text = text.replace("fish", "bird", 2)
+# print(new_text)
+
+# text = "Hello, world!"
+# new_text = text.replace(" world", "")
+# print(new_text)
+
+# print('TestHook'.removeprefix('Test')) # Hook
+# print('TestHook'.removeprefix('Hook')) # TestHook
+
+# url_search = "<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>"
+# _, query = url_search.split('?')
+# print(query)
+
+# url_search = "<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>"
+# _, query = url_search.split('?')
+# print(query)
+
+# obj_query = {}
+# for el in query.split('&'):
+#     key, value = el.split('=')
+#     obj_query.update({key: value.replace('+', ' ')})
+# print(obj_query)
+
+# number = "12345"
+# print(number.isdigit())  # Виведе: True
+
+# text = "Number123"
+# print(text.isdigit())  # Виведе: False
+
+# user_input = input("Введіть число: ")
+# if user_input.isdigit():
+#     print("Це дійсно число!")
+# else:
+#     print("Це не число!")
+
+# for char in "Hello 123":
+#     if char.isdigit():
+#         print(f"'{char}' - це цифра")
+#     else:
+#         print(f"'{char}' - не цифра")
+
+# intab = "aeiou"
+# outtab = "12345"
+# trantab = str.maketrans(intab, outtab)
+
+# str = "This is string example"
+# print(str.translate(trantab))
+
+# intab = "aeiou"
+# trantab = str.maketrans('', '', intab)
+
+# str = "This is string example"
+# print(str.translate(trantab))
+
+# a = [1, 2, 3]
+# b = ['a', 'b', 'c']
+
+# result = zip(a, b)
+# print(list(result))
+
+# names = ["Anna", "Oleh", "Ihor"]
+# scores = [90, 85, 78]
+
+# for name, score in zip(names, scores):
+#     print(name, score)
+
+# symbols = "0123456789ABCDEF"
+# code = [
+#         '0000', '0001', '0010', '0011', '0100', '0101', '0110', '0111',
+#         '1000', '1001', '1010', '1011', '1100', '1101', '1110', '1111'
+#         ]
+
+# MAP = {}
+
+# for s, c in zip(symbols, code):
+#     MAP[ord(s)] = c
+#     MAP[ord(s.lower())] = c
+
+# result = "34 DF 56 AC".translate(MAP)
+# print(result)
+
