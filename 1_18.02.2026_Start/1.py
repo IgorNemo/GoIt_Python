@@ -1658,3 +1658,233 @@ s = 'Some words'
 
 # result = "34 DF 56 AC".translate(MAP)
 # print(result)
+
+# symbols = "0123456789ABCDEF"
+# code = [
+#         '0000', '0001', '0010', '0011', '0100', '0101', '0110', '0111',
+#         '1000', '1001', '1010', '1011', '1100', '1101', '1110', '1111'
+#         ]
+
+# MAP = {}
+
+# for s, c in zip(symbols, code):
+#     MAP[ord(s)] = c
+#     MAP[ord(s.lower())] = c
+
+# result = "34 DF 56 AC".translate(MAP)
+# print(result)
+
+morze_dict = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
+              'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+              'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+              'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+              'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---',
+              '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...',
+              '8': '---..', '9': '----.'}
+
+# Перетворення ключів словника на Unicode коди
+# table_morze_dict = {}
+# for k, v in morze_dict.items():
+#     table_morze_dict[ord(k)] = v
+
+# string = "Hello world"
+
+# result = ""
+
+# for ch in string:
+#     result = result + ch.upper().translate(table_morze_dict)
+
+# print(result)
+
+# morze_dict = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
+#               'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+#               'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+#               'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+#               'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---',
+#               '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...',
+#               '8': '---..', '9': '----.'}
+
+# # Перетворення ключів словника на Unicode коди
+# table_morze_dict = {}
+# for k, v in morze_dict.items():
+#     table_morze_dict[ord(k)] = v
+
+# string = "Hello world"
+
+# result = ""
+
+# for ch in string:
+#     result = result + ch.upper().translate(table_morze_dict)
+
+# print(result)
+
+# Наприклад, вивести числа від 0 до 7 в десятковому, шістнадцятковому,
+# вісімковому і двійковому представленні можна наступним чином:
+# for i in range(8):
+#     s = f"int: {i:d};  hex: {i:#x};  oct: {i:#o};  bin: {i:#b}"
+#     print(s)
+
+# price = 19.99
+# quantity = 3
+# total = f"Total: {price * quantity:.2f}"
+# print(total)
+
+
+
+# <: Вирівнювання вмісту по лівому краю.
+# >: Вирівнювання вмісту по правому краю.
+# ^: Вирівнювання вмісту по центру.
+# =: Використовується для вирівнювання чисел, 
+# при цьому знак (якщо він є) відображається зліва, 
+# а число - по правому краю поля.
+# width = 5
+# for num in range(12):
+#     print(f'{num:^10} {num**2:^10} {num**3:^10}')
+
+# name = "Alice"
+# formatted = f"{name:>10}"
+# print(formatted)  # Виведе: '     Alice' (вирівнювання праворуч)
+
+# completion = 0.756
+# formatted = f"{completion:.1%}"
+# print(formatted)  # Виведе: '75.6%'
+
+# progress = 0.5
+# formatted = f"{progress:.0%}"
+# print(formatted)
+
+# В Python вбудована своя міні-мова форматування рядків: 
+# https://docs.python.org/3/library/string.html#format-specification-mini-language
+
+# import re
+
+# text = "Вивчення Python може бути веселим."
+# pattern = "Python"
+# match = re.search(pattern, text)
+
+# if match:
+#     print("Знайдено:", match.group())
+# else:
+#     print("Не знайдено.")
+
+# import re
+
+# text = "Вивчення Python може бути веселим."
+# pattern = r"в\w*м"
+# match = re.search(pattern, text, re.IGNORECASE)
+
+# if match:
+#     print("Знайдено:", match.group())
+
+# import re
+
+# text = "Моя електронна адреса: example@example.com"
+# pattern = r"\w+@\w+\.\w+"
+# match = re.search(pattern, text)
+
+# if match:
+#     print("Електронна адреса:", match.group())
+
+# import re
+
+# email = "username@domain.com"
+# pattern = r"(\w+)@(\w+\.\w+)"
+# match = re.search(pattern, email)
+
+# if match:
+#     user_name = match.group(1)
+#     domain_name = match.group(2)
+#     print("Ім'я користувача:", user_name)
+#     print("Домен:", domain_name)
+
+# import re
+
+# text = "Рік 2023 був складнішим, ніж 2022"
+# print(text)
+# pattern = r"\d+"
+# matches = re.findall(pattern, text)
+
+# print(matches)
+
+# import re
+
+# text = "Python - це проста, але потужна мова програмування."
+# print(text)
+# pattern = r"\w+"
+# matches = re.findall(pattern, text)
+
+# print(matches)  # Виведе список всіх слів у рядку
+
+# import re
+
+# text = "Контакти: example1@example.com, example2@sample.org"
+# print(text)
+# pattern = r"\w+@\w+\.\w+"
+# matches = re.findall(pattern, text)
+
+# print(matches)  # Виведе всі знайдені електронні адреси
+
+# import re
+
+# file_name = "Мій документ Python.txt"
+# print(file_name)
+# pattern = r"\s"
+# replacement = "_"
+# formatted_name = re.sub(pattern, replacement, file_name)
+
+# print(formatted_name)
+
+# import re
+
+# text = "Python - потужна, універсальна; мова!"
+# print(text)
+# pattern = r"[;,\-:!\.]"
+# replacement = ""
+# modified_text = re.sub(pattern, replacement, text)
+
+# print(modified_text)  
+
+# import re
+
+# phone = """
+#         Михайло Куліш: 050-171-1634
+#         Вікторія Кущ: 063-134-1729
+#         Оксана Гавриленко: 068-234-5612
+#         """
+# pattern = r"(\d{3})-(\d{3})-(\d{4})"
+# replacement = r"(\1) \2-\3"
+# formatted_phone = re.sub(pattern, replacement, phone)
+
+# print(formatted_phone)
+
+# import re
+
+# text = "Python - це проста, але потужна мова програмування."
+# print(text)
+# pattern = r"\s+"
+# words = re.split(pattern, text)
+
+# print(words)  # Виведе список слів у рядку
+
+# import re
+
+# text = "Python - потужна; проста, універсальна: мова!"
+# print(text)
+# pattern = r"[;,\-:!\s]+"
+# elements = re.split(pattern, text)
+
+# print(elements)  # Виведе список частин, розділених пунктуацією
+# print(elements[:-1:])
+
+# # Результат роботи коду:
+# # ['Python', 'потужна', 'проста', 'універсальна', 'мова', '']
+# # ['Python', 'потужна', 'проста', 'універсальна', 'мова']
+
+# import re
+
+# text = "apple#banana!mango@orange;kiwi"
+# pattern = r"[#@;!]"
+# fruits = re.split(pattern, text)
+
+# print(fruits)
+
