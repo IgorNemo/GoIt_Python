@@ -1888,3 +1888,46 @@ morze_dict = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '.
 
 # print(fruits)
 
+# Самоперевірка Module 3:
+# users = [
+#     {"name": "Bill Gates", "birthday": "1955.3.25"},
+#     {"name": "Steve Jobs", "birthday": "1955.3.21"},
+#     {"name": "Jinny Lee", "birthday": "1956.3.22"},
+#     {"name": "Sarah Lee", "birthday": "1957.3.23"},
+#     {"name": "Jonny Lee", "birthday": "1958.3.22"},
+#     {"name": "John Doe", "birthday": "1985.01.23"},
+#     {"name": "Jane Smith", "birthday": "1990.01.27"}
+# ]
+
+# converted_date = string_to_date(date_string)
+# print(converted_date)
+# date_string = date_to_string(converted_date)
+# print(date_string)
+# from datetime import datetime
+
+# date_string = "2024.01.01"
+# def string_to_date(date_string):
+    
+
+
+# def date_to_string(date):
+
+
+# Автоперевірка_1 Module_3:
+
+# from datetime import datetime
+
+# def string_to_date(date):
+#     converted_date = datetime.strptime(date, "%Y.%m.%d")
+#     return converted_date.date()
+
+# def date_to_string(string):
+#     return string.strftime("%Y.%m.%d")
+
+
+# string = "2020.04.27"
+# converted_date = string_to_date(string)
+# print(converted_date)
+# formatted_date_only = date_to_string(converted_date)
+# print(formatted_date_only)
+
