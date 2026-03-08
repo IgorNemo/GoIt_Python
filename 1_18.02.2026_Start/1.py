@@ -2022,3 +2022,35 @@
 # ]
 # prepared_users = prepare_user_list(users)
 # print(get_upcoming_birthdays(prepared_users, days=7))
+
+
+# (x % 7)
+# майже завжди означає "залишити число в межах одного тижня".
+
+# from datetime import datetime, timedelta, date
+
+
+# def string_to_date(date_string):
+#     return datetime.strptime(date_string, "%Y.%m.%d").date()
+
+
+# def find_next_weekday(start_date, weekday):
+#     days_ahead = weekday - start_date.weekday()
+#     if days_ahead <= 0:
+#         days_ahead += 7
+#     return start_date + timedelta(days=days_ahead)
+
+
+# def adjust_for_weekend(birthday):
+#     if birthday.weekday() >= 5:
+#         return find_next_weekday(birthday, 0)
+#     return birthday
+
+
+# birthday = "1955.3.12"
+# birthday_date = string_to_date(birthday)
+# today = date.today()
+# this_year_birthday = birthday_date.replace(year=today.year)
+# this_year_birthday = adjust_for_weekend(this_year_birthday)
+# print(this_year_birthday)
+
